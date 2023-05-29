@@ -1,0 +1,10 @@
+*{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.centre{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
