@@ -27,14 +27,25 @@
 <!-- ............................................. -->
 
 <h1>Else if ladder</h1>
-<ng-template [ngIf]="color==='red'">
-  <h2 [style.color]="color">{{color}} color</h2>
+<ng-template [ngIf]="colorr==='red'">
+  <h2 [style.color]="colorr">{{colorr}} color</h2>
 </ng-template>
-<ng-template [ngIf]="color==='green'">
-  <h2 [style.color]="color">{{color}} color</h2>
+<ng-template [ngIf]="colorr==='green'">
+  <h2 [style.color]="colorr">{{colorr}} color</h2>
 </ng-template>
-<ng-template [ngIf]="color==='blue'">
-  <h2 [style.color]="color">{{color}} color</h2>
+<ng-template [ngIf]="colorr==='blue'">
+  <h2 [style.color]="colorr">{{colorr}} color</h2>
 </ng-template>
 <input type="text" #colortype placeholder="enter color">
 <button (click)="changecolor(colortype.value)">click</button>
+
+<h1>Switch Case</h1>
+<div [ngSwitch]="colorr">
+  <h1 *ngSwitchCase="'red'">Red</h1>
+  <h1 *ngSwitchDefault>Default</h1>
+</div>
+
+<h1>For loop</h1>
+<p *ngFor="let item of userDetails">{{item.name}}</p>
+
+<h1 [style.color]="colorr">{{colorr}}</h1>

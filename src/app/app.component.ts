@@ -11,7 +11,11 @@ export class AppComponent {
   count:number = 0;
   disable:any = true;
   show:boolean = true;
-  color:string = 'red';
+  colorr:string = 'red';
+  userDetails=[
+    {name:"harshit",age:"22"},
+    {name:"ram", age:"22"}
+  ];
 
   getName(val:any){
     // alert("Working")
@@ -42,7 +46,7 @@ export class AppComponent {
   }
 
   changecolor(val:any){
-    this.color = val;
+    this.colorr = val;
   }
 
 }
